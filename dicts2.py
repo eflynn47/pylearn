@@ -26,3 +26,22 @@ game_properties = ["current_score", "high_score", "number_of_lives", "items_in_i
 
 initial_game_state = {}.fromkeys(game_properties, 0)
 print(initial_game_state)
+
+tea = bakery_stock.pop('tea cake')
+print(tea)
+print(bakery_stock)
+
+inventory = {'croissant': 19, 'bagel': 4, 'muffin': 8, 'cake': 1} #DON'T CHANGE THIS LINE!
+
+# Make a copy of inventory and save it to a variable called stock_list USE A DICTIONARY METHOD
+stock_list = inventory.copy()
+print(stock_list)
+# add the value 18 to stock_list under the key "cookie"
+stock_list['cookie'] = 18
+print(stock_list)
+# remove 'cake' from stock_list USE A DICTIONARY METHOD
+stock_list.pop('cake')
+print(stock_list)
+
+#Dict comprehension
+
