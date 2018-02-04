@@ -27,3 +27,18 @@ print(answer4)
 
 answer5 = [c for c in 'amazing' if c not in 'aeiou']
 print(answer5)
+
+#create list like [[1,2,3],[1,2,3],[1,2,3]] with comprehension
+board = [[x for x in range(1,4)]  for n in range(1,4)]
+print(board)
+
+#create list like [['X','O','X'],['X','O','X'],['X','O','X']] with comprehension
+kiss = [['X' if nu % 2 != 0 else 'O' for nu in range(1,6)] for val in range(1,4)] 
+print(kiss)
+
+#use nested list comp to create [[0, 1, 2], [0, 1, 2], [0, 1, 2]]
+answer6 = [[x for x in range(3)] for n in range(3)]
+print(answer6)
+
+answer7 = [[x for x in range(10)] for n in range(10)]
+print(answer7)
