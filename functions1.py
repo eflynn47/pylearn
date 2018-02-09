@@ -80,6 +80,22 @@ def single_letter_count(s, c):
 def single_letter_count2(s, c):
     return s.lower().count(c.lower())
 
+def multiple_letter_count(s1):
+    return {c: s1.count(c) for c in s1}
+
+def list_manipulation(li, cmd, loc, val=0):
+    if cmd == 'remove':
+        if loc == 'end':
+            return li[-1]
+        return li[0]
+    if loc == 'beginning':
+        li.insert(0, val)
+        return li
+    li.append(val)
+    return li
+
+
+
 if __name__ == "__main__":
     say_hi()
     sing()
@@ -94,3 +110,8 @@ if __name__ == "__main__":
     print(number_compare(2,4))
     print(single_letter_count("Hello World", "h"))
     print(single_letter_count2("Hello World", "L"))
+    print(multiple_letter_count("awesome"))
+    print(list_manipulation([1,2,3], "remove", "end"))
+    print(list_manipulation([1,2,3], "remove", "beginning"))
+    print(list_manipulation([1,2,3], "add", "beginning", 20))
+    print(list_manipulation([1,2,3], "add", "end", 30))
