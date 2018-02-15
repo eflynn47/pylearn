@@ -79,3 +79,5 @@ if __name__ == '__main__':
 
     names = [{'first': 'Elie', 'last': 'Schoppik'}, {'first': 'Colt', 'last': 'Steele'}]
     print(extract_full_name(names)) # ['Elie Schoppik', 'Colt Steele']
+
+    print("This is a test")
